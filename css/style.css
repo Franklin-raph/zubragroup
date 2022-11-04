@@ -2,14 +2,35 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Raleway';
+}
+
+a{
+    text-decoration: none;
 }
 
 #main{
-    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(/images/jonathan-roger-LY1eyQMFeyo-unsplash.jpg);
+    background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)), url(/images/jonathan-roger-LY1eyQMFeyo-unsplash.jpg);
     height: 100vh;
+    width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    gap: 20px;
+    top: 0;
+    right: 5%;
+    color: #fff;
+    font-size: 18px;
+}
+
+nav a{
+    color: #fff;
 }
 
 .content{
@@ -22,17 +43,97 @@
     left: 50%;
     transform: translate(-50%, -50%);
     width: 50%;
+    height: 80vh;
     text-align: center;
 }
 
 .content img{
-    /* width: 25%; */
+    width: 35%;
 }
 
 .content p{
     color: #fff;
     font-style: italic;
-    font-weight: bold;
+    font-weight: 500;
     font-size: 25px;
-    margin: 20px 0;
+    margin: 60px 0;
+    width: 80%;
+}
+
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 26px;
+}
+
+.buttons a:nth-of-type(odd){
+    color: #fff;
+    background-color: #E4002B;
+    padding: 12px 18px;
+    font-weight: 600;
+    border-radius: 50px;
+    border: 2px solid #fff;
+    
+}
+
+.buttons a:nth-of-type(even){
+    color: #000;
+    background-color: #fff;
+    padding: 12px 18px;
+    font-weight: 600;
+    border-radius: 50px;
+}
+
+@media screen and (max-width:1200px) {
+    .content{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .content{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:814px) {
+    .buttons{
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 26px;
+    }
+
+    .content{
+        height: 90vh;
+    }
+
+    .content p{
+        font-size: 20px;
+        margin: 40px 0;
+    }
+    
+}
+
+@media screen and (max-width:576px) {
+    .buttons{
+        grid-template-columns: 1fr;
+    }
+
+    .content p{
+        font-size: 18px;
+        margin: 30px 0;
+    }
+
+    .content{
+        padding-top: 5rem;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .content p{
+        width: 90%;
+    }
 }
