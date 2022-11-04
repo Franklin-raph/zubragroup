@@ -10,7 +10,7 @@ a{
 }
 
 #main{
-    background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)), url(/images/jonathan-roger-LY1eyQMFeyo-unsplash.jpg);
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(/images/jonathan-roger-LY1eyQMFeyo-unsplash.jpg);
     height: 100vh;
     width: 100%;
     background-repeat: no-repeat;
