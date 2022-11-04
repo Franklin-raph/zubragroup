@@ -1,0 +1,38 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#main{
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(/images/jonathan-roger-LY1eyQMFeyo-unsplash.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    text-align: center;
+}
+
+.content img{
+    /* width: 25%; */
+}
+
+.content p{
+    color: #fff;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 25px;
+    margin: 20px 0;
+}
