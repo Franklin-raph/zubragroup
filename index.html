@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon" />
+    <title>Home - Zubra Group</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -22,16 +23,163 @@
                 </a>
                 <a href="">About</a>
             </nav>
-            <img src="/images/white.png" alt="" data-aos="fade-down">
+            <img src="img/white.png" alt="" data-aos="fade-down">
             <p>" Entrepreneurship is living a few years of your Life like most people won't, so that you can spend the rest of your life like most people can't. "</p>
             <div class="buttons">
-                <a href="">REAL ESTATE</a>
+                <a href="/zubraRealEstate.html">REAL ESTATE</a>
                 <a href="">CONSTRUCTION</a>
                 <a href="">RENTALS</a>
                 <a href="">PROPERTY MANAGEMENT</a>
             </div>
         </div>
     </div>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Raleway';
+        }
+
+        a{
+            text-decoration: none;
+        }
+
+        #main{
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(img/jonathan-roger-LY1eyQMFeyo-unsplash.jpg);
+            height: 100vh;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: bottom;
+        }
+
+        nav{
+            display: flex;
+            align-items: center;
+            position: absolute;
+            gap: 20px;
+            top: 0;
+            right: 5%;
+            color: #fff;
+            font-size: 18px;
+        }
+
+        nav a{
+            color: #fff;
+        }
+
+        .content{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            position: relative;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 70%;
+            height: 80vh;
+            text-align: center;
+        }
+
+        .content img{
+            width: 35%;
+        }
+
+        .content p{
+            color: #fff;
+            font-style: italic;
+            font-weight: 500;
+            font-size: 25px;
+            margin: 60px 0;
+            width: 80%;
+            line-height: 25px;
+        }
+
+        .buttons{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 26px;
+        }
+
+        .buttons a:nth-of-type(odd){
+            color: #fff;
+            background-color: #E4002B;
+            padding: 12px 18px;
+            font-weight: 600;
+            border-radius: 50px;
+            border: 2px solid #fff;
+            
+        }
+
+        .buttons a:nth-of-type(even){
+            color: #000;
+            background-color: #fff;
+            padding: 12px 18px;
+            font-weight: 600;
+            border-radius: 50px;
+        }
+
+        @media screen and (max-width:1200px) {
+            .content{
+                width: 80%;
+            }
+        }
+
+        @media screen and (max-width:992px) {
+            .content{
+                width: 90%;
+            }
+        }
+
+        @media screen and (max-width:814px) {
+            .buttons{
+                display: grid;
+                align-items: center;
+                justify-content: center;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 26px;
+            }
+
+            .content{
+                height: 90vh;
+            }
+
+            .content p{
+                font-size: 20px;
+                margin: 40px 0;
+            }
+            
+        }
+
+        @media screen and (max-width:576px) {
+            .buttons{
+                grid-template-columns: 1fr;
+            }
+
+            .content p{
+                font-size: 18px;
+                margin: 30px 0;
+            }
+
+            .content{
+                padding-top: 5rem;
+            }
+
+            .content img{
+                width: 55%;
+            }
+        }
+
+        @media screen and (max-width:320px) {
+            .content p{
+                width: 90%;
+            }
+        }
+    </style>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
