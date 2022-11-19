@@ -247,4 +247,9 @@ html, body{
     .mappleAndPenthouseFirst{
         margin-bottom: 1.5rem;
     }
+
+    .secondSection, .fourthSection{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
 }
