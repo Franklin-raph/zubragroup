@@ -190,6 +190,11 @@ html, body{
         align-items: center;
         justify-content: center;
     }
+
+    .fourthSection h1{
+        font-size: 35px;
+        width: 90%;
+    }
 }
 
 @media screen and (max-width:450px) {
