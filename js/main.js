@@ -24,3 +24,28 @@ AOS.init({
   anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 
 });
+
+
+$('.single-item').slick({
+  infinite: true,
+  autoplay: true,
+  arrows: false
+});
+
+
+function openNav(){
+  document.querySelector(".side-nav").style.right = "0"
+}
+
+function closeNav(){
+  document.querySelector(".side-nav").style.right = "-2000px"
+}
+
+window.onscroll = function() {
+  if (window.scrollY == 0) {
+    document.querySelector(".nav").style.backgroundColor = "transparent"; 
+       
+  }else{
+    document.querySelector(".nav").style.backgroundColor = "red"; 
+  }
+};

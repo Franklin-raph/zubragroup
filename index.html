@@ -16,15 +16,52 @@
 
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-    <!-- <div class="firstSection"> -->
-    <img src="/imgs/jonathan-roger-LY1eyQMFeyo-unsplash.jpg" alt="" class="firstSectionImg">
-    <!-- </div> -->
+    <div class="nav">
+
+        <img src="/imgs/white.png" alt="">
+        <div class="menuToggle" onclick="openNav()">
+            <i class="ri-menu-3-line"></i>
+            <p>Menu</p>
+        </div>
+
+        <div class="side-nav">
+            <div class="single-item">
+                <img src="/imgs/location-cosgrove-home-bg.jpg" alt="" class="nav-img">
+            </div>
+            <div class="navLink">
+                <div class="navLinkTop">
+                    <img src="/imgs/white.png" alt="">
+                    <i class="ri-close-fill" onclick="closeNav()"></i>
+                </div>
+                <div class="navLinks">
+                    <a href="/">Home</a>
+                    <a href="">About</a>
+                    <a href="">Management</a>
+                    <a href="/">Project</a>
+                    <a href="">Our Homes</a>
+                    <a href="">Gallery</a>
+                    <a href="">Contact</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="single-item" id="topSection">
+        <img src="/imgs/jonathan-roger-LY1eyQMFeyo-unsplash.jpg" alt="" class="firstSectionImg">
+        <img src="/imgs/jonathan-roger-LY1eyQMFeyo-unsplash.jpg" alt="" class="firstSectionImg">
+        <img src="/imgs/jonathan-roger-LY1eyQMFeyo-unsplash.jpg" alt="" class="firstSectionImg">
+    </div>
     <div class="secondSection">
         <h1>
-            Living Spaces Designed With Perfection
+            Living Spaces Designed With <span class="zubraColor"> Perfection</span>
         </h1>
         <div data-aos="fade-up" data-aos-duration="3000" data-aos-delay="500">
             <p>
@@ -92,12 +129,12 @@
     <div class="fourthSection">
         <div>
             <h1>
-                Our <br> Value <br> Proposition
+                Our <br> Value <br> <span class="zubraColor"> Proposition</span>
             </h1>
             <p data-aos="fade-up" data-aos-duration="3000" data-aos-delay="500">
                 The companies that own the future are those that are forward thinking in all their approaches, 
                 anticipating market needs, trends, and technology, and using all these to their advantage to 
-                create the best products and services. Cosgrove is committed to building homes that are sustainably 
+                create the best products and services. Zubra Group is committed to building homes that are sustainably 
                 ready for tomorrow’s technology from simple automation and energy efficiency to full-on smart home 
                 capabilities yet are also aesthetically pleasing and practical in today’s world.
             </p>
@@ -113,6 +150,9 @@
         <img src="/imgs/location-cosgrove-home-bg.jpg" alt="" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="500">
     </div>
 
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="/js/main.js"></script>
 </body>
