@@ -41,11 +41,11 @@ function closeNav(){
   document.querySelector(".side-nav").style.right = "-2000px"
 }
 
-window.onscroll = function() {
-  if (window.scrollY == 0) {
-    document.querySelector(".nav").style.backgroundColor = "transparent"; 
+// window.onscroll = function() {
+//   if (window.scrollY == 0) {
+//     document.querySelector(".nav").style.backgroundColor = "transparent"; 
        
-  }else{
-    document.querySelector(".nav").style.backgroundColor = "red"; 
-  }
-};
+//   }else{
+//     document.querySelector(".nav").style.backgroundColor = "red"; 
+//   }
+// };
