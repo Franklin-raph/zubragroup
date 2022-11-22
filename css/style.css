@@ -15,6 +15,7 @@ a{
 
 .firstSectionImg{
     width: 100%;
+    height: 100vh;
     margin-bottom: -5px;
 }
 
@@ -348,5 +349,8 @@ a{
     .secondSection, .fourthSection{
         padding-left: 1rem;
         padding-right: 1rem;
+    }
+    .side-nav .nav-img{
+       display: none;
     }
 }
