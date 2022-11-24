@@ -32,6 +32,13 @@ $('.single-item').slick({
   arrows: false
 });
 
+$('.single-item-testimonial').slick({
+  infinite: true,
+  autoplay: true,
+  arrows: false,
+  dots: true
+});
+
 
 function openNav(){
   document.querySelector(".side-nav").style.right = "0"
