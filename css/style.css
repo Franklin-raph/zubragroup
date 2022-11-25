@@ -322,12 +322,13 @@ a{
 
 .footer .footerTop{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     text-align: center;
     padding: 130px 120px;
     color: #fff;
     border-bottom: 1px solid rgb(201, 201, 201);
+    gap: 20px;
 }
 
 .privacyAndSocial{
@@ -375,6 +376,22 @@ a{
         width: 70%;
         padding: 1.5rem;
     }
+
+    .footer .footerTop{
+        padding: 130px 50px;
+    }
+
+    .privacyAndSocial{
+        padding: 30px 50px;
+    }
+
+    .footer h1{
+        font-size: 27px;
+    }
+
+    .footer p{
+        font-size: 16px;
+    }
 }
 
 @media screen and (max-width:992px) {
@@ -394,6 +411,10 @@ a{
         padding: 100px 70px;
         width: 80%;
     }
+
+    .footer .meet{
+        width: 50%;
+    }
 }
 
 @media screen and (max-width:768px) {
@@ -408,7 +429,6 @@ a{
         font-size: 50px;
         text-align: center;
         line-height: 60px;
-        /* margin-bottom: 50px; */
         margin: 0 auto 50px;
     }
 
@@ -438,6 +458,24 @@ a{
 
     .featured .single-item{
         width: 70% !important;
+    }
+    .footer .footerTop{
+        padding: 130px 30px;
+    }
+
+    .footer .footerTop{
+        flex-direction: column;
+        align-items: center;
+        gap: 39px;
+    }
+
+    .privacyAndSocial{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer .meet{
+        width: 70%;
     }
 }
 
