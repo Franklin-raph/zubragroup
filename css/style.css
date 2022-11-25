@@ -246,9 +246,11 @@ a{
 .testimonials{
     text-align: center;
     padding: 100px;
+    width: 70%;
+    margin: auto;
 }
 
-.testimonials h1{
+.testimonials h1, .featured h1{
     font-family: 'EB Garamond';
     margin-bottom: 40px;
     color: #666;
@@ -261,6 +263,108 @@ a{
     color: #333;
     font-style: italic;
 }
+
+.featured{
+    /* display: flex;
+    justify-content: space-between; */
+    background-color: #F5F5F5;
+    padding: 100px 20px;
+}
+
+.newsImage{
+    width: 100%;
+}
+
+.featured .single-item{
+    width: 50% !important;
+    margin-left: auto;
+    /* margin-right: auto; */
+    float: none;
+    padding-right: 20px
+}
+
+.featured .singleNews h3{
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    font-family: 'EB Garamond';
+    color: #666;
+}
+
+.featured .singleNews .newsDetails{
+    font-family: "Poppins";
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    color: #666;
+}
+
+.newsInfo{
+    display: flex;
+    align-items: center;
+    font-family: "Poppins";
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    gap: 10px;
+    color: #666;
+}
+
+.newsInfo img{
+    border-radius: 50%;
+}
+
+.footer{
+    background-color: #E4002B;
+
+}
+
+.footer .footerTop{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    padding: 130px 120px;
+    color: #fff;
+    border-bottom: 1px solid rgb(201, 201, 201);
+}
+
+.privacyAndSocial{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 120px;
+}
+
+.privacyAndSocial a{
+    font-family: "Poppins";
+    color: #fff;
+}
+
+.privacyAndSocial span{
+    color: #fff;
+    font-size: 25px;
+    margin: 0 5px;
+}
+
+.footer h1{
+    font-size: 40px;
+    font-family: "Eb Garamond";
+    margin-bottom: 10px;
+}
+
+.footer p{
+    font-family: "Poppins";
+    font-size: 18px;
+}
+
+.footer .meet{
+    width: 30%;
+}
+
+
+/* MEDIA QUERY */
 
 @media screen and (max-width:1400px) {
     .secondSection, .fourthSection{
@@ -288,6 +392,7 @@ a{
 
     .testimonials{
         padding: 100px 70px;
+        width: 80%;
     }
 }
 
@@ -312,7 +417,28 @@ a{
     }
     .top-nav-img{
         width: 25%;
-    }    
+    }
+    .newsDetails{
+        display: none;
+    }
+    .featured{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: auto;
+    }
+    .featured .single-item{
+        margin: 0 auto 50px;
+    }
+
+    .featured h1{
+        text-align: center;
+    }
+
+    .featured .single-item{
+        width: 70% !important;
+    }
 }
 
 @media screen and (max-width:576px) {
@@ -340,7 +466,16 @@ a{
 
      .testimonials{
         padding: 100px 50px;
+        width: 90%;
     }
+
+    .featured .single-item{
+        width: 90% !important;
+    }
+
+    .featured .singleNews h3{
+        font-size: 18px;
+    }    
 }
 
 @media screen and (max-width:450px) {
@@ -406,15 +541,24 @@ a{
 
     .testimonials{
         padding: 100px 20px;
+        width: 100%;
     }
 
     .testimonials p{
         font-size: 16px;
+    }
+    .featured .single-item{
+        width: 100% !important;
     }
 }
 
 @media screen and (max-width:375px) {
     .top-nav-img{
         width: 40%;
+    }
+
+    .newsInfo{
+        flex-direction: column;
+        align-items: flex-start;
     }
 }
