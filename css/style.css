@@ -337,6 +337,12 @@ a{
     margin: 0 5px;
 }
 
+.nums a{
+    color: #fff;
+    font-family: 'Poppins';
+    font-size: 20px;
+}
+
 .footer h1{
     font-size: 40px;
     font-family: "Eb Garamond";
