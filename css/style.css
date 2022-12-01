@@ -148,11 +148,23 @@ a{
     width: 100%;
 }
 
+.pages-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #E4002B;
+    padding: 20px 50px;
+}
+
+.pages-nav .top-nav-img{
+    width: 15%;
+}
+
 .nav a, .nav i{
     color: #fff;
 }
 
-.nav .menuToggle{
+.nav .menuToggle, .pages-nav .menuToggle{
     display: flex;
     align-items: center;
     color: #fff;
@@ -172,6 +184,10 @@ a{
 
 .nav .menuToggle:hover i, .nav .menuToggle:hover p{
     color: #E4002B;
+    cursor: pointer;
+}
+
+.pages-nav .menuToggle:hover i, .pages-nav .menuToggle:hover p{
     cursor: pointer;
 }
 
@@ -220,6 +236,7 @@ a{
 .navLinkTop i{
     font-size: 40px;
     cursor: pointer;
+    color: #fff;
 }
 
 .navLinkTop img{
@@ -403,7 +420,7 @@ a{
         width: 90%;
     }
 
-    .top-nav-img{
+    .top-nav-img, .pages-nav .top-nav-img{
         width: 20%;
     }
 
@@ -441,7 +458,7 @@ a{
         margin: 0 auto 50px;
     }
 
-    .top-nav-img{
+    .top-nav-img, .pages-nav .top-nav-img{
         width: 25%;
     }
     .newsDetails{
@@ -499,7 +516,7 @@ a{
         width: 90%;
     }
 
-    .top-nav-img{
+    .top-nav-img, .pages-nav .top-nav-img{
         width: 30%;
     }
     .side-nav .nav-img{
@@ -573,7 +590,7 @@ a{
     .nav{
         padding: 0 30px;
     }
-    .top-nav-img{
+    .top-nav-img, .pages-nav .top-nav-img{
         width: 35%;
     }
     .nav .menuToggle{
@@ -591,10 +608,14 @@ a{
     .featured .single-item{
         width: 100% !important;
     }
+
+    .pages-nav{
+        padding: 20px 30px;
+    }
 }
 
 @media screen and (max-width:375px) {
-    .top-nav-img{
+    .top-nav-img, .pages-nav .top-nav-img{
         width: 40%;
     }
 
